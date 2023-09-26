@@ -6,7 +6,7 @@ body:
       value: |
         Please fill the entire template to be able to help you best
   - type: textarea
-    id: what
+    id: improvements
     attributes:
       label: What did you want to do?
       description: ""
@@ -15,4 +15,4 @@ body:
       render: bash
     validations:
       required: true
-  
+ 
