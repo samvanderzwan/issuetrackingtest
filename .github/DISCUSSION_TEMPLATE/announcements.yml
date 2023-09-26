@@ -6,13 +6,27 @@ body:
       value: |
         Please fill the entire template to be able to help you best
   - type: textarea
-    id: improvements
+    id: what
     attributes:
-      label: What
-      description: "What did you want to do?"
+      label: What did you want to do?
+      description: ""
       value: |
         Describe what you wanted to do
       render: bash
     validations:
       required: true
- 
+  - type: textarea
+    id: steps
+    attributes:
+      label: What steps did you take?
+      description: ""
+      value: |
+        Please describe one step at the time what you did
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  
