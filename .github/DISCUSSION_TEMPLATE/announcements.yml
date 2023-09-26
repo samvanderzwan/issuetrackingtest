@@ -11,10 +11,6 @@ body:
       label: What do you want to do?
       description: "Please describe what you want to do?"
       value: |
-        1.
-        2.
-        3.
-        ...
       render: bash
     validations:
       required: true
