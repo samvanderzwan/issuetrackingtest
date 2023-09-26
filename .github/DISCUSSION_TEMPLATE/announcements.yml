@@ -8,13 +8,10 @@ body:
   - type: textarea
     id: improvements
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: What
+      description: "What did you want to do?"
       value: |
-        1.
-        2.
-        3.
-        ...
+        Describe what you wanted to do
       render: bash
     validations:
       required: true
