@@ -1,55 +1,47 @@
-title: "[General] "
+title: "Please type your title here"
 labels: ["General Introduction"]
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
+        Please fill in all the fields to be able to help you best
   - type: textarea
-    id: improvements
+    id: Achieve
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
+      label: What do you want to achieve?
+      description: "Please describe  "
+      value: |   
       render: bash
     validations:
       required: true
-  - type: markdown
+   - type: textarea
+    id: Steps
     attributes:
+      label: Which steps did you take
+      description: "Please describe the steps you have taken"
       value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+            Please number the steps e.g. 1. I opened ESDL
+      render: bash
     validations:
       required: true
-  - type: dropdown
-    id: download
+   - type: textarea
+    id: Steps
     attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+      label: Happened
+      description: "Please describe the steps you have taken"
+      value: |
+            Please describe what happend
+      render: bash
+    validations:
+      required: true     
+   - type: textarea
+    id: Steps
+    attributes:
+      label: Expected
+      description: "What is the expected result"
+      value: |
+            Please describe what you expected to happen
+      render: bash
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+     
