@@ -5,13 +5,4 @@ body:
     attributes:
       value: |
         Please fill the entire template to be able to help you best
-  - type: textarea
-    id: improvements
-    attributes:
-      label: What did you want to do?
-      description: ""
-      value: |
-        Describe what you wanted to do
-      render: bash
-    validations:
-      required: true
+        
