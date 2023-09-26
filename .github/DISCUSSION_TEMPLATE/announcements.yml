@@ -1,10 +1,6 @@
 title: "Please type your title here"
 labels: ["General Introduction"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please fill in all the fields to be able to help you best
   - type: textarea
     id: Achieve
     attributes:
@@ -14,34 +10,5 @@ body:
       render: bash
     validations:
       required: true
-   - type: textarea
-    id: Steps
-    attributes:
-      label: Which steps did you take
-      description: "Please describe the steps you have taken"
-      value: |
-            Please number the steps e.g. 1. I opened ESDL
-      render: bash
-    validations:
-      required: true
-   - type: textarea
-    id: Steps
-    attributes:
-      label: Happened
-      description: "Please describe the steps you have taken"
-      value: |
-            Please describe what happend
-      render: bash
-    validations:
-      required: true     
-   - type: textarea
-    id: Steps
-    attributes:
-      label: Expected
-      description: "What is the expected result"
-      value: |
-            Please describe what you expected to happen
-      render: bash
-    validations:
-      required: true
+
      
