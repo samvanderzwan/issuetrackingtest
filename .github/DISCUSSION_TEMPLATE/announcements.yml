@@ -4,5 +4,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill the entire template to be able to help you best
-        
+        This is text that will show up in the template!
