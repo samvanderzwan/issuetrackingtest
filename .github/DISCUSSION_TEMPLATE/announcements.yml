@@ -15,18 +15,4 @@ body:
       render: bash
     validations:
       required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: What steps did you take?
-      description: ""
-      value: |
-        Please describe one step at the time what you did
-        1.
-        2.
-        3.
-        ...
-      render: bash
-    validations:
-      required: true
   
