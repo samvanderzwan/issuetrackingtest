@@ -11,20 +11,30 @@ body:
       label: What do you want to do?
       description: "Please describe what you want to do?"
       value: |
-        test
+        Please try clearly to descirbe what you want to achieve.
       render: bash
     validations:
       required: true
   - type: textarea
     id: checks
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: steps
+      description: "Describe the steps you have taken"
       value: |
         1.
         2.
         3.
         ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: expected
+      description: "What is the expected result?"
+      value: |
+        Please try to clearly describe what you expect.        
       render: bash
     validations:
       required: true
