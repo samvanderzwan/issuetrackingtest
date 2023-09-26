@@ -28,16 +28,6 @@ body:
       render: bash
     validations:
       required: true
-  - type: textarea
-    id: checks
-    attributes:
-      label: expected
-      description: "What is the expected result?"
-      value: |
-        Please try to clearly describe what you expect.        
-      render: bash
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
