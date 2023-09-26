@@ -1,15 +1,15 @@
 title: "Title"
-labels: [""]
+labels: ["title"]
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
+        Please fill the entire template to support you best
   - type: textarea
-    id: improvements
+    id: what
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: What do you want to do?
+      description: "Please describe what you want to do?"
       value: |
         1.
         2.
