@@ -28,3 +28,23 @@ body:
       render: bash
     validations:
       required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: "What is the expected results?"
+      value: |
+        What is your expected result
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: "What is the results?"
+      value: |
+        What happened
+      render: bash
+    validations:
+      required: true
