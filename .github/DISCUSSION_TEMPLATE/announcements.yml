@@ -1,50 +1,71 @@
-title: "Title"
-labels: ["title"]
+name: Bug Report
+description: You think somethings is broken in the UI
+title: "[Bug]: "
+labels: ["bug-report"]
+
 body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered, and that it hasn't been fixed in a recent build/commit.
+      options:
+        - label: I have searched the existing issues and checked the recent builds/commits
+          required: true
   - type: markdown
     attributes:
       value: |
-        Please fill the entire template to support you best
+        *Please fill this form with as much information as possible, don't forget to fill "What browsers" and *provide screenshots if possible**
   - type: textarea
-    id: what
+    id: what-did
     attributes:
-      label: What do you want to do?
-      description: "Please describe what you want to do?"
-      value: |
-        Please try clearly to descirbe what you want to achieve.
-      render: bash
+      label: What happened?
+      description: Tell us what happened in a very clear and simple way
     validations:
       required: true
   - type: textarea
-    id: checks
+    id: steps
     attributes:
-      label: steps
-      description: "Describe the steps you have taken"
+      label: Steps to reproduce the problem
+      description: Please provide us with precise step by step instructions on how to reproduce the bug
       value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
+        1. Go to .... 
+        2. Press ....
+        3. ...
     validations:
       required: true
   - type: textarea
-    id: expected
+    id: what-should
     attributes:
-      label: Expected result
-      description: "What is the expected results?"
-      value: |
-        What is your expected result
-      render: bash
+      label: What should have happened?
+      description: Tell us what you think the normal behavior should be
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers do you use to access the UI ?
+      multiple: true
+      options:
+        - Mozilla Firefox
+        - Google Chrome
+        - Brave
+        - Apple Safari
+        - Microsoft Edge
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console logs
+      description: Please provide **full** cmd/terminal logs from the moment you started UI to the end of it, after your bug happened. If it's very long, provide a link to pastebin or similar service.
+      render: Shell
     validations:
       required: true
   - type: textarea
-    id: result
+    id: misc
     attributes:
-      label: Result
-      description: "What is the results?"
+      label: Additional information
+      description: Please provide us with any relevant additional info or context.
+   - type: markdown
+    attributes:
       value: |
-        What happened
-      render: bash
-    validations:
-      required: true
+        *If you have an ESDL please attach it to the discusion after you have pressed the start discussion button**
