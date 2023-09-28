@@ -65,7 +65,3 @@ body:
     attributes:
       label: Additional information
       description: Please provide us with any relevant additional info or context.
-   - type: markdown
-    attributes:
-      value: |
-        *If you have an ESDL please attach it to the discusion after you have pressed the start discussion button**
